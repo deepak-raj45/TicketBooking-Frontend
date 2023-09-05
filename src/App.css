@@ -1,0 +1,91 @@
+/* App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Increase margin between rows */
+}
+
+.row-letter {
+  font-size: 18px; /* Decrease the font size for row letters */
+  font-weight: bold;
+  margin-right: 20px; /* Increase margin between row letters */
+}
+
+.seat {
+  width: 35px;
+  height: 35px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 18px; /* Increase the margin between seats by 0.5 times */
+  color: #100f0f;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Increase the box shadow */
+  font-size: 12px; /* Decrease the font size for seats */
+  font-family: 'Arial', sans-serif;
+}
+
+.seat.booked {
+  background-color: #e74c3c;
+  cursor: not-allowed;
+}
+
+.seat:hover {
+  background-color: #e74c3c;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase the box shadow on hover */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add a screen view at the bottom */
+.screen-view {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.next-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  /* Hover effect */
+  &:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+  }
+
+  /* Active effect */
+  &:active {
+    transform: scale(0.95); /* Add a slight scale effect on active/clicked state */
+  }
+
+}

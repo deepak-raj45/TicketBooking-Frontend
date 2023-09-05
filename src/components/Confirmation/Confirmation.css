@@ -1,0 +1,52 @@
+
+/* Style the container */
+.container{
+    margin-top: 55px;
+    height: 600px;
+      }
+      
+      /* Style the heading */
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      /* Style the movie details section */
+      h2 {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      
+      p {
+        font-size: 16px;
+      }
+      
+      /* Style the QR code section */
+      .QRCode {
+        margin-top: 20px;
+      }
+      
+      /* Style the email sent message */
+      p.success-message {
+        color: green;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      
+      /* Style the confirm button */
+      .button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
